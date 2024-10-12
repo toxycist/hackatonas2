@@ -89,7 +89,7 @@ public class Messenger : MonoBehaviour
         buttonImage4.color = newColor;
         buttonImage5.color = oldColor;
         chat1.SetActive(false);
-        chat2.SetActive(false)
+        chat2.SetActive(false);
         chat3.SetActive(false);
         chat4.SetActive(true);
         chat5.SetActive(false);
