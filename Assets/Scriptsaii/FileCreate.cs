@@ -1,20 +1,17 @@
 using System.IO;
 using UnityEngine;
 
-public class CreateTextFile : MonoBehaviour
+public class FileCreate : MonoBehaviour
 {
     void Start()
     {
         // Define the file path (Desktop path)
         string desktopPath = System.Environment.GetFolderPath(System.Environment.SpecialFolder.Desktop);
-        string fileName = "MyTextFile.txt";
+        string fileName = "Browser.txt";
         string filePath = Path.Combine(desktopPath, fileName);
         
-        // Content of the file
-        string fileContent = "Hello, this is a text file created by a Unity game!";
-        
         // Create and write to the text file
-        CreateAndWriteTextFile(filePath, fileContent);
+        CreateAndWriteTextFile(filePath, "");
     }
 
     void CreateAndWriteTextFile(string path, string content)
