@@ -8,10 +8,10 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/TransparentBackgroundScene.unity
     guid: 1806e33f496465549a8e61ec72231d9a
-  - enabled: 1
+  - enabled: 0
     path: Assets/Scenes/SampleScene.unity
     guid: adf0ed9fb4fb4cd46a5f79a126230aee
-  - enabled: 1
+  - enabled: 0
     path: Assets/Scenes/Mail.unity
     guid: e059ede3bb2e31e478f3bf43b35618f9
   m_configObjects: {}
