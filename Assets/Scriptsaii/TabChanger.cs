@@ -4,6 +4,7 @@ using UnityEngine;
 
 public class TabChanger : MonoBehaviour
 {
+    public GameObject menu;
     public GameObject mainPanel; 
     public GameObject mailPanel; 
     public GameObject messPanel; 
@@ -66,5 +67,9 @@ public class TabChanger : MonoBehaviour
         mailPanel.SetActive(false);
         messPanel.SetActive(false);
         torrPanel.SetActive(true);
+    }
+    public void Close()
+    {
+        menu.SetActive(false);
     }
 }
