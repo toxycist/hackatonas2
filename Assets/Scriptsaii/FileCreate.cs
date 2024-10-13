@@ -3,7 +3,7 @@ using UnityEngine;
 
 public class FileCreate : MonoBehaviour
 {
-    void Start()
+    public void CreateFile()
     {
         // Define the file path (Desktop path)
         string desktopPath = System.Environment.GetFolderPath(System.Environment.SpecialFolder.Desktop);
