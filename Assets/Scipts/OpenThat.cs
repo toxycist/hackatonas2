@@ -6,10 +6,16 @@ public class OpenThat : MonoBehaviour
 {
 
     public GameObject panel;
+    public GameObject image;
+    private void Start()
+    {
+        image.SetActive(true);
+    }
 
     public void ActivateScript()
     {
         panel.SetActive(true);
+        image.SetActive(false);
     }
 
     public void Deactivate()
