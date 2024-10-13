@@ -18,34 +18,40 @@ public class Citatos : MonoBehaviour
                 objectCitata.text = "Labas, mano vardas Teodoras, aš padėsiu tau išmokti saugiai elgtis su kompiuteriu.";
                 break;
             case 2:
-                objectCitata.text = "Čia yra mano programėlė, spustelk ant jos, kad įjungtum.";
+                objectCitata.text = "Sukūriau tavo darbalaukyje failą Browser.txt, jis yra beveik kaip tikra naršyklė.";
                 break;
             case 3:
-                objectCitata.text = "Oho! Žiūrek, tau atėjo laiškas!";
+                objectCitata.text = "Nagi, atidaryk jį!";
                 break;
             case 4:
-                objectCitata.text = "Ei, tu gi perskaitei laišką prieš atidarydamas nuorodą?";
+                objectCitata.text = "Oho! Žiūrek, tau atėjo laiškas!";
                 break;
             case 5:
-                objectCitata.text = "Tave bando apgauti! Kai laiškas yra iš nepažįstomo žmogaus, visada atidžiai perskaityk jį ir įsitikink, kad jis nėra kenkėjiškas.";
+                objectCitata.text = "Ei, tu gi perskaitei laišką prieš atidarydamas nuorodą?";
                 break;
             case 6:
-                objectCitata.text = "Jeigu laiške daug klaidų ir jame siūlomas greitas ir paprastas darbas, tai yra apgavystė.";
+                objectCitata.text = "Tave bando apgauti! Kai laiškas yra iš nepažįstomo žmogaus, visada atidžiai perskaityk jį ir įsitikink, kad jis nėra kenkėjiškas.";
                 break;
             case 7:
-                objectCitata.text = "Jei nesi įsitikinęs laiško saugumu, niekada neatidarinėk jame esančių nuorodų! Iš tavęs gali pavogti duomenis.";
+                objectCitata.text = "Jeigu laiške daug klaidų ir jame siūlomas greitas ir paprastas darbas, tai yra apgavystė.";
                 break;
             case 8:
-                objectCitata.text = "O! Pažiūrėk čia, atėjo kažkoks pranešimas!";
+                objectCitata.text = "Jei nesi įsitikinęs laiško saugumu, niekada neatidarinėk jame esančių nuorodų! Iš tavęs gali pavogti duomenis.";
                 break;
             case 9:
-                objectCitata.text = "Tokioje situacijoje svarbiausia nepanikuoti!";
+                objectCitata.text = "O! Pažiūrėk čia, atėjo kažkoks pranešimas!";
                 break;
             case 10:
-                objectCitata.text = "Prisimink, NIEKADA nesiųsk jokių duomenų, ypač banko kortelės.";
+                objectCitata.text = "Tokioje situacijoje svarbiausia nepanikuoti!";
                 break;
             case 11:
-                objectCitata.text = "Dažniausiai jie iš viso neturi tavo duomenų, jie tik meluoja, bet net jeigu duomenys buvo pavogti, tokius žmones reikia ignoruoti ir kreiptis į policiją";
+                objectCitata.text = "Prisimink, NIEKADA nesiųsk jokių duomenų, ypač banko kortelės.";
+                break;
+            case 12:
+                objectCitata.text = "Dažniausiai jie iš viso neturi tavo duomenų, jie tik meluoja, bet net jeigu duomenys buvo pavogti, tokių žmonių žinutes reikia ignoruoti ir kreiptis iš karto į policiją";
+                break;
+            case 13:
+                objectCitata.text = "Linkiu tau niekada nebūti apgautam internete!";
                 break;
         }
     }

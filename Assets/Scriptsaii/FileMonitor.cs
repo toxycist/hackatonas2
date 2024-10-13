@@ -40,6 +40,7 @@ public class FileMonitor : MonoBehaviour
         hWnd = FindWindow(null, windowTitle);
         if (hWnd != IntPtr.Zero)
         {
+            ChatBubbleAppearance.Instance.windowFound = true;
             Debug.Log("Showing browser.");
             ShowWindow(hWnd, 0);
             // Get the window's dimensions

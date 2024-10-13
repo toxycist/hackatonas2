@@ -6,6 +6,7 @@ public class ChatBubbleAppearance : MonoBehaviour
 {
     public static ChatBubbleAppearance Instance { get; private set; }
     public int frazesk;
+    public bool windowFound = false;
     private void Awake()
     {
         // Check if the instance already exists
@@ -25,12 +26,12 @@ public class ChatBubbleAppearance : MonoBehaviour
 
     [SerializeField] GameObject ChatBubble;
     // Start is called before the first frame update
-    void Show()
+    public void Show()
     {
         ChatBubble.SetActive(true);
     }
 
-    void Hide()
+    public void Hide()
     {
         ChatBubble.SetActive(false);
     }
