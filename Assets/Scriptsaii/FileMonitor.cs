@@ -40,6 +40,7 @@ public class FileMonitor : MonoBehaviour
         hWnd = FindWindow(null, windowTitle);
         if (hWnd != IntPtr.Zero)
         {
+            Debug.Log("Showing browser.");
             ShowWindow(hWnd, 0);
             // Get the window's dimensions
             RECT windowRect;
@@ -81,6 +82,7 @@ public class FileMonitor : MonoBehaviour
             out anchoredPosition
         );
 
+        Debug.Log("position: " + anchoredPosition);
         // Set the position of the rectangle
         rectangle.anchoredPosition = new Vector2(anchoredPosition.x-10, anchoredPosition.y);
     }
