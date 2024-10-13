@@ -1,9 +1,10 @@
-using System.Collections;
-using System.Collections.Generic;
 using UnityEngine;
+using System;
+using System.Diagnostics;
 
 public class TabChanger : MonoBehaviour
 {
+
     public GameObject menu;
     public GameObject mainPanel; 
     public GameObject mailPanel; 
@@ -70,6 +71,28 @@ public class TabChanger : MonoBehaviour
     }
     public void Close()
     {
-        menu.SetActive(false);
+        Process[] processes = Process.GetProcessesByName("Notepad");
+
+        if (processes.Length > 0)
+        {
+            foreach (Process process in processes)
+            {
+                try
+                {
+                    // Kill the process
+                    process.Kill();
+                    process.WaitForExit(); // Optional: Wait for the process to exit
+                    UnityEngine.Debug.Log($"Successfully terminated process: {process.ProcessName} (ID: {process.Id})");
+                }
+                catch (Exception ex)
+                {
+                    UnityEngine.Debug.LogError($"Error terminating process {process.ProcessName} (ID: {process.Id}): {ex.Message}");
+                }
+            }
+        }
+        else
+        {
+            UnityEngine.Debug.Log($"No processes found with the name: Notepad.exe");
+        }
     }
 }
