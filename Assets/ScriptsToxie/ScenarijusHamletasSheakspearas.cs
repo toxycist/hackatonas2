@@ -34,6 +34,19 @@ public class ScenarijusHamletasSheakspearas : MonoBehaviour
         ChatBubbleAppearance.Instance.Show();
         yield return new WaitForSeconds(6);
         ChatBubbleAppearance.Instance.frazesk++;
+        // atejo laiskas
+        yield return new WaitForSeconds(6);
+        ChatBubbleAppearance.Instance.frazesk++; //ei, perskaitei?
+        yield return new WaitForSeconds(3);
+        ChatBubbleAppearance.Instance.frazesk++;
+        yield return new WaitForSeconds(6);
+        ChatBubbleAppearance.Instance.frazesk++;
+        yield return new WaitForSeconds(6);
+        ChatBubbleAppearance.Instance.frazesk++;
+        yield return new WaitForSeconds(6);
+        ChatBubbleAppearance.Instance.frazesk++; // pranesimo message
+        //laisko ciklas baigtas
+
 
     }
 

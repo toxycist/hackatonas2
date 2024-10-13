@@ -48,7 +48,10 @@ public class Citatos : MonoBehaviour
                 objectCitata.text = "Prisimink, NIEKADA nesiųsk jokių duomenų, ypač banko kortelės.";
                 break;
             case 12:
-                objectCitata.text = "Dažniausiai jie iš viso neturi tavo duomenų, jie tik meluoja, bet net jeigu duomenys buvo pavogti, tokius žmones reikia ignoruoti ir kreiptis į policiją";
+                objectCitata.text = "Dažniausiai jie iš viso neturi tavo duomenų, jie tik meluoja, bet net jeigu duomenys buvo pavogti, tokių žmonių žinutes reikia ignoruoti ir kreiptis iš karto į policiją";
+                break;
+            case 13:
+                objectCitata.text = "Linkiu tau niekada nebūti apgautam internete!";
                 break;
         }
     }
