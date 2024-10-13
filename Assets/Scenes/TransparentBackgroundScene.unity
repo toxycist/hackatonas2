@@ -4405,7 +4405,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!212 &655341613
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -6192,6 +6192,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 96466d72eefaf6b4a8d37fb2663b4ffc, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  frazesk: 1
   ChatBubble: {fileID: 655341612}
 --- !u!1 &1071705464
 GameObject:
@@ -9317,6 +9318,7 @@ GameObject:
   - component: {fileID: 1602533396}
   - component: {fileID: 1602533398}
   - component: {fileID: 1602533397}
+  - component: {fileID: 1602533399}
   m_Layer: 0
   m_Name: Text (TMP)
   m_TagString: Untagged
@@ -9363,10 +9365,10 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: ', taip.'
+  m_text: "\u0161\u017E\u0119\u0117\u010D"
   m_isRightToLeft: 0
-  m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
-  m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
+  m_fontAsset: {fileID: 11400000, guid: eae41f4cbfbb88d459f8dda5e92d46e9, type: 2}
+  m_sharedMaterial: {fileID: -8652615195392607154, guid: eae41f4cbfbb88d459f8dda5e92d46e9, type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
   m_fontMaterials: []
@@ -9390,8 +9392,8 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 4
-  m_fontSizeBase: 4
+  m_fontSize: 3
+  m_fontSizeBase: 3
   m_fontWeight: 400
   m_enableAutoSizing: 0
   m_fontSizeMin: 18
@@ -9455,7 +9457,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
+  - {fileID: -8652615195392607154, guid: eae41f4cbfbb88d459f8dda5e92d46e9, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -9477,6 +9479,18 @@ MeshRenderer:
   m_SortingLayer: 1
   m_SortingOrder: 30
   m_AdditionalVertexStreams: {fileID: 0}
+--- !u!114 &1602533399
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1602533395}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 954a4767554f9ad439af5841256a2479, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1639854253
 GameObject:
   m_ObjectHideFlags: 0

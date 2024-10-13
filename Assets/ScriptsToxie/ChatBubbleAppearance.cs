@@ -4,6 +4,25 @@ using UnityEngine;
 
 public class ChatBubbleAppearance : MonoBehaviour
 {
+    public static ChatBubbleAppearance Instance { get; private set; }
+    public int frazesk;
+    private void Awake()
+    {
+        // Check if the instance already exists
+        if (Instance != null && Instance != this)
+        {
+            // If another instance exists, destroy this one to enforce singleton pattern
+            Destroy(gameObject);
+            return;
+        }
+
+        // Assign the instance to this object
+        Instance = this;
+
+        // Optionally, make the singleton persistent across scenes
+        DontDestroyOnLoad(gameObject);
+    }
+
     [SerializeField] GameObject ChatBubble;
     // Start is called before the first frame update
     void Show()
