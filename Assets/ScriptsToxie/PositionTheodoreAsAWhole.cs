@@ -4,6 +4,7 @@ using UnityEngine;
 
 public class PositionTheodoreAsAWhole : MonoBehaviour
 {
+    [SerializeField] GameObject ChatBubble;
     [SerializeField] GameObject TheodoreHandLeft;
     [SerializeField] GameObject TheodoreHandRight;
     [SerializeField] float speed = 0.1f;       // Speed of the up/down movement
@@ -17,5 +18,6 @@ public class PositionTheodoreAsAWhole : MonoBehaviour
         // Set the hands' positions relative to Theodore's current position, applying vertical movement
         TheodoreHandRight.transform.position = new Vector3(transform.position.x + 0.85f, transform.position.y + offsetY, transform.position.z);
         TheodoreHandLeft.transform.position = new Vector3(transform.position.x - 0.85f, transform.position.y + offsetY, transform.position.z);
+        ChatBubble.transform.position = new Vector3(transform.position.x - 1.75f, transform.position.y + 3.5f, transform.position.z);
     }
 }
