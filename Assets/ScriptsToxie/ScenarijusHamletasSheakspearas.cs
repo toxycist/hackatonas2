@@ -35,7 +35,7 @@ public class ScenarijusHamletasSheakspearas : MonoBehaviour
         yield return new WaitForSeconds(6);
         ChatBubbleAppearance.Instance.frazesk++;
         // atejo laiskas
-        yield return new WaitForSeconds(6);
+        yield return new WaitForSeconds(10);
         ChatBubbleAppearance.Instance.frazesk++; //ei, perskaitei?
         yield return new WaitForSeconds(3);
         ChatBubbleAppearance.Instance.frazesk++;
@@ -46,6 +46,19 @@ public class ScenarijusHamletasSheakspearas : MonoBehaviour
         yield return new WaitForSeconds(6);
         ChatBubbleAppearance.Instance.frazesk++; // pranesimo message
         //laisko ciklas baigtas
+        yield return new WaitForSeconds(10);
+        ChatBubbleAppearance.Instance.frazesk++; //svarbiausia nepanikuoti
+        yield return new WaitForSeconds(3);
+        ChatBubbleAppearance.Instance.frazesk++;
+        yield return new WaitForSeconds(6);
+        ChatBubbleAppearance.Instance.frazesk++; //dazniausiai as ciulpiu
+        yield return new WaitForSeconds(6);
+        TabChanger tabc = new TabChanger();
+        tabc.Close();
+        ChatBubbleAppearance.Instance.frazesk++;
+        yield return new WaitForSeconds(6);
+        ChatBubbleAppearance.Instance.Hide();
+
 
 
     }
